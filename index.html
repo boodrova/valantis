@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Product List</h1>
+  </header>
+  <div id="filters">
+    <div id="filterBrand">
+      <input type="text" id="filterInputBrand" placeholder="Enter brand">
+      <button onclick="applyFilterBrand()">Apply</button>
+    </div>
+    <div id="filterPrice">
+      <input type="text" id="filterInputPrice" placeholder="Enter price">
+      <button onclick="applyFiltePrice()">Apply</button>
+    </div>
+    <div id="filterName">
+      <input type="text" id="filterInputName" placeholder="Enter name">
+      <button onclick="applyFilterName()">Apply</button>
+    </div>
+  </div>
+  <table id="productTable">
+    <thead>
+      <tr>
+        <th>Brand</th>
+        <th>Product ID</th>
+        <th>Price</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody id="productTableBody">
+      <!-- Product list will be populated here -->
+    </tbody>
+  </table>
+  <footer>
+    <button onclick="prevPage()">Previous Page</button>
+    <span id="currentPage"></span>
+    <button onclick="nextPage()">Next Page</button>
+  </footer>
+  <script src="md5.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
